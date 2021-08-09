@@ -1,9 +1,9 @@
-import React from 'react'
-import { FC } from 'react'
+import React        from 'react'
+import { FC }       from 'react'
 
-import { Box } from '@ui/layout'
-import { Row } from '@ui/layout'
-import { Space } from '@ui/text'
+import { Box }      from '@ui/layout'
+import { Row }      from '@ui/layout'
+import { Space }    from '@ui/text'
 import { NextLink } from '@ui/link'
 
 const Main: FC = () => (

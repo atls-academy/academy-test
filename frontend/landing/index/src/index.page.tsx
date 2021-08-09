@@ -1,5 +1,5 @@
-import React from 'react'
-import { FC } from 'react'
+import React    from 'react'
+import { FC }   from 'react'
 
 import { Hero } from '@fragments/landing-hero'
 import { Main } from '@fragments/landing-main'

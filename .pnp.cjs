@@ -8300,6 +8300,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["eslint-module-utils", "npm:2.6.2"],
             ["debug", "virtual:b58ccc9315b2dddf26cbd84e7ef0c57249b2630cf4a30aa462b6a8b80d986b34ccd97e31dcd9c7eeb1990e24c859a5f9cdbef9016f357edabf5a70a7346e09f5#npm:3.2.7"],
+            ["eslint-import-resolver-node", "npm:0.3.5"],
             ["pkg-dir", "npm:2.0.0"]
           ],
           "linkType": "HARD",

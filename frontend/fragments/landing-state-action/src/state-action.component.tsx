@@ -1,20 +1,20 @@
-import React from 'react'
-import { FC } from 'react'
+import React                         from 'react'
+import { FC }                        from 'react'
 
-import { Box } from '@ui/layout'
-import { Column } from '@ui/layout'
-import { Layout } from '@ui/layout'
-import { Text } from '@ui/text'
+import { Box }                       from '@ui/layout'
+import { Column }                    from '@ui/layout'
+import { Layout }                    from '@ui/layout'
+import { Text }                      from '@ui/text'
 
-import { useRandomColor } from './hooks'
-import { body } from './helpers'
+import { useRandomColor }            from './hooks'
+import { body }                      from './helpers'
 import { getRandomizedColorMessage } from './helpers'
-import { checkResult } from './helpers'
+import { checkResult }               from './helpers'
 
 const StateAction: FC = () => {
   const node = useRandomColor()
 
-  const handleClick = event => {
+  const handleClick = (event) => {
     // Тут ничего трогать не нужно
     checkResult(body(window))
   }

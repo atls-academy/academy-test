@@ -1,5 +1,3 @@
-const withImportantThing = (str) => (nextConfig) => {
-  return {}
-}
+const withImportantThing = (str) => (nextConfig) => ({})
 
 module.exports = { withImportantThing }
