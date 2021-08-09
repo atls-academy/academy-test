@@ -1,0 +1,18 @@
+{
+  "name": "@landing/index-page",
+  "version": "0.0.0",
+  "main": "src/index.ts",
+  "peerDependencies": {
+    "@emotion/styled": "*",
+    "react": "*",
+    "styled-system": "*"
+  },
+  "dependencies": {
+    "@fragments/landing-hero": "workspace:frontend/fragments/landing-hero",
+    "@fragments/landing-main": "workspace:frontend/fragments/landing-main"
+  },
+  "devDependencies": {
+    "@types/react": "^17",
+    "react": "^17.0.2"
+  }
+}
