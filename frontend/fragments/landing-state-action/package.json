@@ -1,0 +1,19 @@
+{
+  "name": "@fragments/landing-state-action",
+  "version": "0.0.0",
+  "main": "src/index.ts",
+  "peerDependencies": {
+    "@emotion/styled": "*",
+    "react": "*",
+    "react-intl": "*",
+    "styled-system": "*"
+  },
+  "dependencies": {
+    "@ui/layout": "workspace:frontend/ui/layout",
+    "@ui/text": "workspace:frontend/ui/text"
+  },
+  "devDependencies": {
+    "@types/react": "^17",
+    "react": "^17.0.2"
+  }
+}

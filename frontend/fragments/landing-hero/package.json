@@ -1,0 +1,17 @@
+{
+  "name": "@fragments/landing-hero",
+  "version": "0.0.0",
+  "main": "src/index.ts",
+  "peerDependencies": {
+    "@emotion/styled": "*",
+    "styled-system": "*"
+  },
+  "dependencies": {
+    "@ui/layout": "workspace:frontend/ui/layout",
+    "@ui/text": "workspace:frontend/ui/text",
+    "react": "16"
+  },
+  "devDependencies": {
+    "@types/react": "^16"
+  }
+}

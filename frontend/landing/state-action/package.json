@@ -1,0 +1,17 @@
+{
+  "name": "@landing/state-action-page",
+  "version": "0.0.0",
+  "main": "src/index.ts",
+  "peerDependencies": {
+    "@emotion/styled": "*",
+    "react": "*",
+    "styled-system": "*"
+  },
+  "devDependencies": {
+    "@types/react": "^17",
+    "react": "^17.0.2"
+  },
+  "dependencies": {
+    "@fragments/landing-state-action": "workspace:frontend/fragments/landing-state-action"
+  }
+}
