@@ -3,7 +3,7 @@ import { ThemeProvider } from '@ui/theme'
 
 const App = ({ Component, props }) => (
   <ThemeProvider>
-    <Component />
+    <Component {...props}/>
   </ThemeProvider>
 )
 

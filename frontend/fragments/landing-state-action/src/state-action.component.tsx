@@ -1,5 +1,4 @@
-import React                         from 'react'
-import { FC }                        from 'react'
+import React, {useEffect, useRef} from 'react'
 
 import { Box }                       from '@ui/layout'
 import { Column }                    from '@ui/layout'
@@ -11,8 +10,12 @@ import { body }                      from './helpers'
 import { getRandomizedColorMessage } from './helpers'
 import { checkResult }               from './helpers'
 
-const StateAction: FC = () => {
-  const node = useRandomColor()
+const StateAction: () => JSX.Element = () => {
+  const randomColor = useRandomColor()
+  const node = useRef(null)
+  useEffect(() => {
+    node.current.style.color = randomColor
+  }, [])
 
   const handleClick = (event) => {
     // Тут ничего трогать не нужно
@@ -24,12 +27,12 @@ const StateAction: FC = () => {
       <Column justifyContent='center'>
         <Layout>
           <Text fontWeight='medium' fontSize='big' ref={node}>
-            {getRandomizedColorMessage<number>('I have randomized color')}
+            {getRandomizedColorMessage<string>('I have randomized color')}
           </Text>
         </Layout>
         <Layout flexBasis={16} />
         <Layout>
-          <Box cursor='pointer'>
+          <Box>
             <Text fontWeight='medium' fontSize='big' onClick={handleClick}>
               Click me
             </Text>

@@ -1,12 +1,11 @@
 import React        from 'react'
-import { FC }       from 'react'
 
 import { Box }      from '@ui/layout'
 import { Row }      from '@ui/layout'
-import { Space }    from '@ui/text'
+import { Space, Text }    from '@ui/text'
 import { NextLink } from '@ui/link'
 
-const Main: FC = () => (
+ export const Main: () => JSX.Element = () => (
   <Box border='1px solid black' width='100%' height='100%'>
     <Row height='100%' justifyContent='center' alignItems='center'>
       <Text fontSize='big' fontWeight='bold'>
@@ -28,4 +27,4 @@ const Main: FC = () => (
   </Box>
 )
 
-export { Main }
+

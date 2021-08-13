@@ -1,1 +1,1 @@
-export * from './hero-component'
+export {Hero} from './hero.component'

@@ -1,16 +1,11 @@
-import { useEffect } from 'react'
-import { useRef }    from 'react'
-
-const useRandomColor = (() => {
-  const node = useRef(null)
+const useRandomColor = ()=> {
   const { random, floor } = Math
   const colors = ['red', 'green', 'blue']
+  const currentColor =  colors[floor(random() * 3)]
 
-  useEffect(() => {
-    node.current.style.color = colors[floor(random() * 3)]
-  }, [])
 
-  return () => node
-})()
+
+  return currentColor
+}
 
 export { useRandomColor }
