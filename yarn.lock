@@ -1287,12 +1287,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fragments/landing-hero@workspace:frontend/fragments/landing-hero"
   dependencies:
-    "@types/react": ^16
+    "@types/react": ^17
     "@ui/layout": "workspace:frontend/ui/layout"
     "@ui/text": "workspace:frontend/ui/text"
-    react: 16
+    react: ^17.0.2
   peerDependencies:
     "@emotion/styled": "*"
+    react: "*"
     styled-system: "*"
   languageName: unknown
   linkType: soft
@@ -2166,7 +2167,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^17.0.1":
+"@types/react-dom@npm:^17, @types/react-dom@npm:^17.0.1":
   version: 17.0.9
   resolution: "@types/react-dom@npm:17.0.9"
   dependencies:
@@ -2183,17 +2184,6 @@ __metadata:
     "@types/scheduler": "*"
     csstype: ^3.0.2
   checksum: cba60aeb284d4024feaca1364557fda72011e984b6b08f6e06a7cdc65e267eabc42d59c541ddbbb81720ab195b6df95a3535540abadd5c0e2cce26b16759dbaa
-  languageName: node
-  linkType: hard
-
-"@types/react@npm:^16":
-  version: 16.14.12
-  resolution: "@types/react@npm:16.14.12"
-  dependencies:
-    "@types/prop-types": "*"
-    "@types/scheduler": "*"
-    csstype: ^3.0.2
-  checksum: e740434b00ba4ba20ec6edd8b779ed2dcd4f5d866a5b1b78bfe6e99b019c8deb078a15640795aa7ebaf32acd9882194305884ffc5fc885c59049a5f14a91b8c0
   languageName: node
   linkType: hard
 
@@ -2397,10 +2387,14 @@ __metadata:
     "@atls-ui-parts/link": ^0.0.2
     "@emotion/react": ^11.4.1
     "@emotion/styled": ^11.3.0
+    "@types/react-dom": ^17
     "@types/styled-system": ^5
+    next: 10.0.5
+    react-dom: ^17.0.2
     styled-system: ^5.1.5
   peerDependencies:
     "@emotion/styled": "*"
+    next: "*"
     react: "*"
     styled-system: "*"
   languageName: unknown
@@ -11506,7 +11500,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^17.0.1":
+"react-dom@npm:^17.0.1, react-dom@npm:^17.0.2":
   version: 17.0.2
   resolution: "react-dom@npm:17.0.2"
   dependencies:
@@ -11583,17 +11577,6 @@ fsevents@~2.1.2:
     loose-envify: ^1.1.0
     object-assign: ^4.1.1
   checksum: b254cc17ce3011788330f7bbf383ab653c6848902d7936a87b09d835d091e3f295f7e9dd1597c6daac5dc80f90e778c8230218ba8ad599f74adcc11e33b9d61b
-  languageName: node
-  linkType: hard
-
-"react@npm:16":
-  version: 16.14.0
-  resolution: "react@npm:16.14.0"
-  dependencies:
-    loose-envify: ^1.1.0
-    object-assign: ^4.1.1
-    prop-types: ^15.6.2
-  checksum: 8484f3ecb13414526f2a7412190575fc134da785c02695eb92bb6028c930bfe1c238d7be2a125088fec663cc7cda0a3623373c46807cf2c281f49c34b79881ac
   languageName: node
   linkType: hard
 
@@ -13810,7 +13793,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"typescript@*, typescript@^4.2.4, typescript@^4.3.5":
+typescript@^4.3.5:
   version: 4.3.5
   resolution: "typescript@npm:4.3.5"
   bin:
@@ -13820,53 +13803,13 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-typescript@4.3.2:
-  version: 4.3.2
-  resolution: "typescript@npm:4.3.2"
-  bin:
-    tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: c2a86fa03ce03b255adc13ccd70a55173ca6539ae12114feca59f34a4e9bb69f14fb7cd5adc6c2416e568cff05c870b89d1366768ec55fce04fbdffb429a1cee
-  languageName: node
-  linkType: hard
-
-typescript@^3.2.4:
-  version: 3.9.10
-  resolution: "typescript@npm:3.9.10"
-  bin:
-    tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: 46c842e2cd4797b88b66ef06c9c41dd21da48b95787072ccf39d5f2aa3124361bc4c966aa1c7f709fae0509614d76751455b5231b12dbb72eb97a31369e1ff92
-  languageName: node
-  linkType: hard
-
-"typescript@patch:typescript@*#~builtin<compat/typescript>, typescript@patch:typescript@^4.2.4#~builtin<compat/typescript>, typescript@patch:typescript@^4.3.5#~builtin<compat/typescript>":
+"typescript@patch:typescript@^4.3.5#~builtin<compat/typescript>":
   version: 4.3.5
   resolution: "typescript@patch:typescript@npm%3A4.3.5#~builtin<compat/typescript>::version=4.3.5&hash=d8b4e7"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: bc2c4fdf0f1557fdafe4ef74848c72ebd9c8c60829568248f869121aea2bb20e16649a252431d0acb185ec118143be22bed73d08f64379557810d82756afedde
-  languageName: node
-  linkType: hard
-
-"typescript@patch:typescript@4.3.2#~builtin<compat/typescript>":
-  version: 4.3.2
-  resolution: "typescript@patch:typescript@npm%3A4.3.2#~builtin<compat/typescript>::version=4.3.2&hash=d8b4e7"
-  bin:
-    tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: 3d3dec06ba6e5b05caa292355712ed9db813fa1c2377630b1f24b42e5ee8957f0bcdd5efd1500c970a11a6f684897f5728f5542ac822932227159a0611499a5e
-  languageName: node
-  linkType: hard
-
-"typescript@patch:typescript@^3.2.4#~builtin<compat/typescript>":
-  version: 3.9.10
-  resolution: "typescript@patch:typescript@npm%3A3.9.10#~builtin<compat/typescript>::version=3.9.10&hash=d8b4e7"
-  bin:
-    tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: 8dcd46a8a2cb81198497f00c7721a34c914bf6b3241bf9687b868bdec9e59f1f44da41e7917cfc1dcabee4595229c73bab047f2d85c1aedacc0d1b526cc81534
   languageName: node
   linkType: hard
 

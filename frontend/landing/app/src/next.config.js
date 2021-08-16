@@ -4,5 +4,4 @@ const { withImportantThing } = require('./with-important-thing')
 
 module.exports = withPlugins([
   withWorkspaces,
-  withImportantThing('This is very important function!'),
 ])

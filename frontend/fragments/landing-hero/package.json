@@ -4,14 +4,15 @@
   "main": "src/index.ts",
   "peerDependencies": {
     "@emotion/styled": "*",
+    "react": "*",
     "styled-system": "*"
   },
   "dependencies": {
     "@ui/layout": "workspace:frontend/ui/layout",
-    "@ui/text": "workspace:frontend/ui/text",
-    "react": "16"
+    "@ui/text": "workspace:frontend/ui/text"
   },
   "devDependencies": {
-    "@types/react": "^16"
+    "@types/react": "^17",
+    "react": "^17.0.2"
   }
 }

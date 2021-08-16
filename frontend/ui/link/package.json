@@ -5,13 +5,17 @@
   "main": "src/index.ts",
   "peerDependencies": {
     "@emotion/styled": "*",
+    "next": "*",
     "react": "*",
     "styled-system": "*"
   },
   "devDependencies": {
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
+    "@types/react-dom": "^17",
     "@types/styled-system": "^5",
+    "next": "10.0.5",
+    "react-dom": "^17.0.2",
     "styled-system": "^5.1.5"
   },
   "dependencies": {
