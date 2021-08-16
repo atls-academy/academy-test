@@ -8,6 +8,7 @@
     "dev": "yarn app renderer dev"
   },
   "devDependencies": {
+    "@types/events": "^3.0.0",
     "@types/node": "14",
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.1",
@@ -19,9 +20,11 @@
     "@atls/next-config-with-pnp-workspaces": "^0.0.1",
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
+    "@fragments/landing-state-action": "workspace:frontend/fragments/landing-state-action",
     "@landing/index-page": "workspace:frontend/landing/index",
     "@landing/state-action-page": "workspace:frontend/landing/state-action",
     "@ui/theme": "workspace:frontend/ui/theme",
+    "events": "^3.3.0",
     "express": "^4.17.1",
     "next": "10.0.5",
     "next-compose-plugins": "^2.2.1",
@@ -29,5 +32,8 @@
     "react-dom": "^17.0.1",
     "react-intl": "5.20.7",
     "styled-system": "^5.1.5"
+  },
+  "resolutions": {
+    "react": "^17.0.1"
   }
 }

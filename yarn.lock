@@ -1596,14 +1596,17 @@ __metadata:
     "@atls/next-config-with-pnp-workspaces": ^0.0.1
     "@emotion/react": ^11.4.1
     "@emotion/styled": ^11.3.0
+    "@fragments/landing-state-action": "workspace:frontend/fragments/landing-state-action"
     "@landing/index-page": "workspace:frontend/landing/index"
     "@landing/state-action-page": "workspace:frontend/landing/state-action"
+    "@types/events": ^3.0.0
     "@types/node": 14
     "@types/react": ^17.0.2
     "@types/react-dom": ^17.0.1
     "@types/recompose": ^0
     "@types/styled-system": ^5
     "@ui/theme": "workspace:frontend/ui/theme"
+    events: ^3.3.0
     express: ^4.17.1
     next: 10.0.5
     next-compose-plugins: ^2.2.1
@@ -1621,6 +1624,7 @@ __metadata:
   dependencies:
     "@fragments/landing-hero": "workspace:frontend/fragments/landing-hero"
     "@fragments/landing-main": "workspace:frontend/fragments/landing-main"
+    "@fragments/landing-state-action": "workspace:frontend/fragments/landing-state-action"
     "@types/react": ^17
     react: ^17.0.2
   peerDependencies:
@@ -1634,6 +1638,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@landing/state-action-page@workspace:frontend/landing/state-action"
   dependencies:
+    "@fragments/landing-hero": "workspace:frontend/fragments/landing-hero"
     "@fragments/landing-state-action": "workspace:frontend/fragments/landing-state-action"
     "@types/react": ^17
     react: ^17.0.2
@@ -2021,6 +2026,13 @@ __metadata:
   version: 0.0.50
   resolution: "@types/estree@npm:0.0.50"
   checksum: 9a2b6a4a8c117f34d08fbda5e8f69b1dfb109f7d149b60b00fd7a9fb6ac545c078bc590aa4ec2f0a256d680cf72c88b3b28b60c326ee38a7bc8ee1ee95624922
+  languageName: node
+  linkType: hard
+
+"@types/events@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@types/events@npm:3.0.0"
+  checksum: 9a424c2da210957d5636e0763e8c9fc3aaeee35bf411284ddec62a56a6abe31de9c7c2e713dabdd8a76ff98b47db2bd52f61310be6609641d6234cc842ecbbe3
   languageName: node
   linkType: hard
 
@@ -6346,7 +6358,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"events@npm:^3.0.0, events@npm:^3.2.0":
+"events@npm:^3.0.0, events@npm:^3.2.0, events@npm:^3.3.0":
   version: 3.3.0
   resolution: "events@npm:3.3.0"
   checksum: f6f487ad2198aa41d878fa31452f1a3c00958f46e9019286ff4787c84aac329332ab45c9cdc8c445928fc6d7ded294b9e005a7fce9426488518017831b272780

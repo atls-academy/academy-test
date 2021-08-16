@@ -1,10 +1,10 @@
-import React        from 'react'
-import { FC }       from 'react'
+import React           from 'react'
+import { FC }          from 'react'
 
-import { Box }      from '@ui/layout'
-import { Row }      from '@ui/layout'
-import { Space }    from '@ui/text'
-import { NextLink } from '@ui/link'
+import { Box }         from '@ui/layout'
+import { Row }         from '@ui/layout'
+import { Space, Text } from '@ui/text'
+import { NextLink }    from '@ui/link'
 
 const Main: FC = () => (
   <Box border='1px solid black' width='100%' height='100%'>

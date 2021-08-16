@@ -13,7 +13,6 @@ import { checkResult }               from './helpers'
 
 const StateAction: FC = () => {
   const node = useRandomColor()
-
   const handleClick = (event) => {
     // Тут ничего трогать не нужно
     checkResult(body(window))
@@ -24,12 +23,12 @@ const StateAction: FC = () => {
       <Column justifyContent='center'>
         <Layout>
           <Text fontWeight='medium' fontSize='big' ref={node}>
-            {getRandomizedColorMessage<number>('I have randomized color')}
+            {getRandomizedColorMessage<string>('I have randomized color')}
           </Text>
         </Layout>
         <Layout flexBasis={16} />
         <Layout>
-          <Box cursor='pointer'>
+          <Box>
             <Text fontWeight='medium' fontSize='big' onClick={handleClick}>
               Click me
             </Text>

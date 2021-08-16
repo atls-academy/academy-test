@@ -12,6 +12,7 @@
     "react": "^17.0.2"
   },
   "dependencies": {
+    "@fragments/landing-hero": "workspace:frontend/fragments/landing-hero",
     "@fragments/landing-state-action": "workspace:frontend/fragments/landing-state-action"
   }
 }

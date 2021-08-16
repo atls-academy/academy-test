@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "@fragments/landing-hero": "workspace:frontend/fragments/landing-hero",
-    "@fragments/landing-main": "workspace:frontend/fragments/landing-main"
+    "@fragments/landing-main": "workspace:frontend/fragments/landing-main",
+    "@fragments/landing-state-action": "workspace:frontend/fragments/landing-state-action"
   },
   "devDependencies": {
     "@types/react": "^17",
