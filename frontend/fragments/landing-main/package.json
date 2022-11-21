@@ -1,7 +1,7 @@
 {
   "name": "@fragments/landing-main",
   "version": "0.0.0",
-  "main": "src/index.tsx",
+  "main": "src/index.ts",
   "dependencies": {
     "@ui/layout": "workspace:frontend/ui/layout",
     "@ui/link": "workspace:frontend/ui/link",

@@ -4,7 +4,7 @@
   "license": "BSD-3-Clause",
   "main": "src/index.ts",
   "dependencies": {
-    "@atls-ui-parts/layout": "^0.0.4"
+    "@atls-ui-parts/layout": "^0.0.5"
   },
   "devDependencies": {
     "@emotion/react": "^11.9.0",

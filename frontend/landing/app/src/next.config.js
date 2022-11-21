@@ -11,6 +11,4 @@ const nextConfig = {
   },
 }
 
-module.exports = withPlugins([
-  withImportantThing('This is very important function!'),
-], nextConfig)
+module.exports = withPlugins([withImportantThing('This is very important function!')], nextConfig)

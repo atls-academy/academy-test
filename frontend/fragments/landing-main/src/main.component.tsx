@@ -3,8 +3,9 @@ import { FC }       from 'react'
 
 import { Box }      from '@ui/layout'
 import { Row }      from '@ui/layout'
-import { Space }    from '@ui/text'
 import { NextLink } from '@ui/link'
+import { Space }    from '@ui/text'
+import { Text }     from '@ui/text'
 
 const Main: FC = () => (
   <Box border='1px solid black' width='100%' height='100%'>

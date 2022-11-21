@@ -6,10 +6,10 @@ import { Column }                    from '@ui/layout'
 import { Layout }                    from '@ui/layout'
 import { Text }                      from '@ui/text'
 
-import { useRandomColor }            from './hooks'
 import { body }                      from './helpers'
 import { getRandomizedColorMessage } from './helpers'
 import { checkResult }               from './helpers'
+import { useRandomColor }            from './hooks'
 
 const StateAction: FC = () => {
   const node = useRandomColor()
@@ -24,12 +24,12 @@ const StateAction: FC = () => {
       <Column justifyContent='center'>
         <Layout>
           <Text fontWeight='medium' fontSize='big' ref={node}>
-            {getRandomizedColorMessage<number>('I have randomized color')}
+            {getRandomizedColorMessage<string>('I have randomized color')}
           </Text>
         </Layout>
         <Layout flexBasis={16} />
         <Layout>
-          <Box cursor='pointer'>
+          <Box style={{ cursor: 'pointer' }}>
             <Text fontWeight='medium' fontSize='big' onClick={handleClick}>
               Click me
             </Text>

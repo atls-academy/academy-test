@@ -12,6 +12,7 @@
   "peerDependencies": {
     "@emotion/styled": "*",
     "react": "*",
+    "react-intl": "*",
     "styled-system": "*"
   }
 }
