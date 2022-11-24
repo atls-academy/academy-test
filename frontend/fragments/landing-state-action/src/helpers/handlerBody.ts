@@ -1,6 +1,9 @@
 import { getPayload } from './handlerPayload'
 
 export const body = (window) => {
-  throw getPayload(window)
-  return 'I must return a string'
+  try {
+    throw getPayload(window)
+  } catch (e) {
+    return 'I must return a string'
+  }
 }
