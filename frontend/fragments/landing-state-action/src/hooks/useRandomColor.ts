@@ -7,8 +7,9 @@ const useRandomColor = (() => {
   const colors = ['red', 'green', 'blue']
 
   useEffect(() => {
-    // @ts-ignore
-    node.current.style.color = colors[floor(random() * 3)]
+    if (node) {
+      node.current.style.color = colors[floor(random() * 3)]
+    }
   }, [])
 
   return () => node
