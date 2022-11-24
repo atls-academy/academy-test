@@ -1,5 +1,6 @@
 import React                         from 'react'
 import { FC }                        from 'react'
+import { useRef }                    from 'react'
 
 import { Box }                       from '@ui/layout'
 import { Column }                    from '@ui/layout'
@@ -12,7 +13,7 @@ import { checkResult }               from './helpers'
 import { useRandomColor }            from './hooks'
 
 const StateAction: FC = () => {
-  const node = useRandomColor()
+  const node = useRandomColor(useRef(null))
 
   const handleClick = (event) => {
     // Тут ничего трогать не нужно
